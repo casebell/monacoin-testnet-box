@@ -1,8 +1,8 @@
-LITECOIND=litecoind
+COIND=monacoind
 S1_FLAGS=
 S2_FLAGS=
-S1=$(LITECOIND) -datadir=1 $(S1_FLAGS)
-S2=$(LITECOIND) -datadir=2 $(S2_FLAGS)
+S1=$(COIND) -datadir=1 $(S1_FLAGS)
+S2=$(COIND) -datadir=2 $(S2_FLAGS)
 
 start:
 	$(S1) -daemon
